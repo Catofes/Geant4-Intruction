@@ -2,6 +2,7 @@
 // Created by herbertqiao on 1/20/16.
 //
 
+#include <Shielding.hh>
 #include "B1DetectorConstruction.hh"
 #include "B1ActionInitialization.hh"
 
@@ -47,7 +48,7 @@ int main(int argc,char** argv)
     runManager->SetUserInitialization(new B1DetectorConstruction());
 
     // Physics list
-    G4VModularPhysicsList* physicsList = new QBBC;
+    G4VModularPhysicsList* physicsList = new Shielding;
     physicsList->SetVerboseLevel(1);
     runManager->SetUserInitialization(physicsList);
 
