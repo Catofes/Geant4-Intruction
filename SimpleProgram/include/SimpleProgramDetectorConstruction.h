@@ -5,16 +5,20 @@
 #ifndef GEANT4_INTRODUCTION_SIMPLEPROGRAMDETECTORCONSTRUCTION_H
 #define GEANT4_INTRODUCTION_SIMPLEPROGRAMDETECTORCONSTRUCTION_H
 
-#include "G4VUserDetectorConstruction.hh"
 
-class SimpleProgramDetectorConstruction: public G4VUserDetectorConstruction
-{
+#include <G4VUserDetectorConstruction.hh>
+
+
+/// Detector construction class to define materials and geometry.
+
+class SimpleProgramDetectorConstruction : public G4VUserDetectorConstruction {
 public:
     SimpleProgramDetectorConstruction();
+
     virtual ~SimpleProgramDetectorConstruction();
 
-    virtual G4VPhysicalVolume * Construct();
-};
+    virtual G4VPhysicalVolume *Construct();
 
+};
 
 #endif //GEANT4_INTRODUCTION_SIMPLEPROGRAMDETECTORCONSTRUCTION_H
