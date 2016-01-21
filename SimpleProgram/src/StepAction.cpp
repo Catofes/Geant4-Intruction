@@ -26,7 +26,7 @@ void SteppingAction::UserSteppingAction(const G4Step *aStep) {
     if (startPoint->GetPosition().x() >= 0 * mm && startPoint->GetPosition().x() < 0.1 * mm) {
         run->AddEnergy(energy, 0);
     }
-    else if (startPoint->GetPosition().x() >= 0.1 * mm && startPoint->GetPosition().x() < 1.1 * mm) {
+    else if (startPoint->GetPosition().x() >= 0.1 * mm && startPoint->GetPosition().x() < 0.5 * mm) {
         run->AddEnergy(0, energy);
     }
 }

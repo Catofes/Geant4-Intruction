@@ -49,9 +49,9 @@ G4VPhysicalVolume *SimpleProgramDetectorConstruction::Construct() {
     G4LogicalVolume *logicDetector1 = new G4LogicalVolume(solidDetector1, si, "Detector1Log");
     new G4PVPlacement(0, G4ThreeVector(0.05, 0, 0) * mm, logicDetector1, "Detector1", logicWorld, false, 0, true);
 
-    G4Box *solidDetector2 = new G4Box("Detector_2_Box", 0.5 * mm, 1 * m, 1 * m);
+    G4Box *solidDetector2 = new G4Box("Detector_2_Box", 0.2 * mm, 1 * m, 1 * m);
     G4LogicalVolume *logicDetector2 = new G4LogicalVolume(solidDetector2, si, "Detector2Log");
-    new G4PVPlacement(0, G4ThreeVector(0.6, 0, 0) * mm, logicDetector2, "Detector2", logicWorld, false, 0, true);
+    new G4PVPlacement(0, G4ThreeVector(0.3, 0, 0) * mm, logicDetector2, "Detector2", logicWorld, false, 0, true);
 
     return physWorld;
 }
