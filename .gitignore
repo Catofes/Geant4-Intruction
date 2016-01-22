@@ -1,5 +1,5 @@
 B1
 .idea
 main.cpp
-CMakeLists.txt
+/CMakeLists.txt
 SimpleProgram/build
